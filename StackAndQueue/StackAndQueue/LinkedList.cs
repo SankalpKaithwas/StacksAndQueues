@@ -49,7 +49,12 @@ namespace StackAndQueue
             {
                 while (temp != null)
                 {
-                    Console.WriteLine(temp.data);
+                    Console.Write(temp.data);
+                    if (temp.next != null)
+                    {
+                        Console.Write("->");
+                    }
+
                     temp = temp.next;
                 }
             }
